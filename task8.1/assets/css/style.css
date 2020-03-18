@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+body {
+  font-family: 'Roboto', 'Open Sans';
+  position: relative;
+  background-color: #eaeaea;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+header {
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #006691;
+}
+
+header .head-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .head-top i {
+  font-size: 30px;
+  color: #DA0028;
+}
+
+header .head-top img {
+  margin: auto;
+  width: 275px;
+}
+
+section {
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.sign-number-instruction p {
+  margin: 0;
+  padding: 20px 0;
+}
+
+.sign-number-input input {
+  border-style: none;
+  border-bottom: 2px solid #ddd;
+  padding: 0 5px;
+  font-size: 20px;
+}
+
+.sign-number-input .country {
+  width: 20%;
+  margin-right: 20px;
+}
+
+.sign-number-input .number {
+  width: 80%;
+}
+
+.sign-number-btn {
+  margin: 40px 0;
+}
+
+.sign-number-btn-main {
+  background-color: #006691;
+  color: #fff;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.social-instruction {
+  margin: 30px 0;
+}
+
+.social-login-btn {
+  margin-bottom: 25px;
+}
+
+.social-login-btn .fb-border {
+  border: 1px solid #3C5A99;
+}
+
+.social-login-btn .gmail-border {
+  border: 1px solid #F54A3A;
+}
+
+.social-login-btn a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.social-login-btn a .fb {
+  background-color: #3C5A99;
+}
+
+.social-login-btn a .gmail {
+  background-color: #F54A3A;
+}
+
+.social-login-btn a .social-img {
+  width: 85px;
+  height: 100%;
+  line-height: 70px;
+}
+
+.social-login-btn a .social-img img {
+  width: 40px;
+}
+
+.social-login-btn a .social-link {
+  height: 100%;
+  width: 100%;
+  line-height: 70px;
+}
+
+.social-login-btn a .social-link p {
+  color: #fff;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.social-extra {
+  margin: 20px 0;
+}
+
+.social-extra p {
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.social-extra a {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 17px;
+  color: #006691;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #fff;
+  padding: 20px 0;
+}
+
+footer .footer-item a {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #646464;
+}
+/*# sourceMappingURL=style.css.map */

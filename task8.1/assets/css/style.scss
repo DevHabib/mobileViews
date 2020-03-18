@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+body {
+  font-family: 'Roboto', 'Open Sans';
+  position: relative;
+  background-color: #eaeaea;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+header {
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #006691;
+
+  .head-top {
+    display: flex;
+    align-items: center;
+
+    i {
+      font-size: 30px;
+      color: #DA0028;
+    }
+
+    img {
+      margin: auto;
+      width: 275px;
+    }
+  }
+}
+
+section {
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.sign-number {
+  &-instruction {
+    p {
+      margin: 0;
+      padding: 20px 0;
+    }
+  }
+
+  &-input {
+    input {
+      border-style: none;
+      border-bottom: 2px solid #ddd;
+      padding: 0 5px;
+      font-size: 20px;
+    }
+
+    .country {
+      width: 20%;
+      margin-right: 20px;
+    }
+
+    .number {
+      width: 80%;
+    }
+  }
+
+  &-btn {
+    margin: 40px 0;
+
+    &-main {
+      background-color: #006691;
+      color: #fff;
+      width: 100%;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.social {
+  &-instruction {
+    margin: 30px 0;
+  }
+
+  &-login {
+    &-btn {
+      margin-bottom: 25px;
+
+      .fb-border {
+        border: 1px solid #3C5A99;
+      }
+
+      .gmail-border {
+        border: 1px solid #F54A3A;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        border-radius: 5px;
+
+        .fb {
+          background-color: #3C5A99;
+        }
+
+        .gmail {
+          background-color: #F54A3A;
+        }
+
+        .social-img {
+          width: 85px;
+          height: 100%;
+          line-height: 70px;
+
+          img {
+            width: 40px;
+          }
+
+
+        }
+
+        .social-link {
+          height: 100%;
+          width: 100%;
+          line-height: 70px;
+
+          p {
+            color: #fff;
+            font-weight: 300;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  &-extra {
+    margin: 20px 0;
+
+    p {
+      font-weight: 600;
+      margin: 20px 0;
+    }
+
+    a {
+      font-family: 'Roboto';
+      font-weight: 300;
+      font-size: 17px;
+      color: #006691;
+      margin-bottom: 20px;
+
+
+    }
+  }
+}
+
+footer {
+  background-color: #fff;
+  padding: 20px 0;
+
+  .footer-item {
+    a {
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #646464;
+    }
+  }
+}
