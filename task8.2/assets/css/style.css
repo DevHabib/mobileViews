@@ -95,8 +95,9 @@ header .head-top img {
 }
 
 .sign-number-input form a {
-  margin-left: -25px;
+  position: absolute;
   color: #ccc;
+  right: 15px;
 }
 
 .sign-number .or {
@@ -153,6 +154,6 @@ footer {
 footer .footer-item a {
   font-weight: 400;
   color: #000;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 /*# sourceMappingURL=style.css.map */
