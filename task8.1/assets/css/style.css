@@ -29,6 +29,10 @@ p {
   margin-bottom: 0;
 }
 
+.iti__flag {
+  background-image: url("../img/flags.png");
+}
+
 header {
   background-color: #fff;
   margin-bottom: 10px;
@@ -70,15 +74,6 @@ section {
   border-bottom: 2px solid #ddd;
   padding: 0 5px;
   font-size: 20px;
-}
-
-.sign-number-input .country {
-  width: 20%;
-  margin-right: 20px;
-}
-
-.sign-number-input .number {
-  width: 80%;
 }
 
 .sign-number-btn {
