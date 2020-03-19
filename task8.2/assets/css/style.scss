@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  src: url("../fonts/product-sans/Product-Sans-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  src: url("../fonts/product-sans/Product-Sans-Regular.ttf");
+}
+
+body {
+  font-family: 'Product Sans', 'Open Sans';
+  position: relative;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+header {
+  padding: 60px 0;
+
+  .head-top {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin: auto;
+      width: 275px;
+    }
+  }
+}
+
+.sign-number {
+  .welcome {
+    h3 {
+      font-size: 30px;
+      text-transform: capitalize;
+      font-weight: 600;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 20px;
+      color: #999;
+      letter-spacing: 1px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &-input {
+    form {
+      position: relative;
+
+      input {
+        font-size: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        height: 45px;
+        padding: 0 15px;
+        width: 100%;
+
+        &::placeholder {
+          color: #ccc;
+        }
+      }
+
+      a {
+        margin-left: -25px;
+        color: #ccc;
+      }
+    }
+  }
+
+  .or {
+    text-align: center;
+    margin: 60px 0;
+    color: #999;
+    font-size: 20px;
+    text-transform: lowercase;
+  }
+
+  .social-login {
+    &-btn {
+      a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        padding: 10px 0;
+
+        .social-link {
+          width: 70%;
+
+          p {
+            font-size: 20px;
+            color: #333;
+          }
+        }
+
+        .social-img {
+          width: 30%;
+
+          img {
+            width: 100%;
+            height: 25px;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #fff;
+  padding: 20px 0;
+  margin-top: 113px;
+
+  .footer-item {
+    a {
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #000;
+    }
+  }
+}
