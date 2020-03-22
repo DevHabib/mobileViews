@@ -5,13 +5,11 @@ var swiper = new Swiper('.swiper-container', {
   loop: true,
   clickable: true,
   clickableClass: 'swiper-pagination-clickable',
-  cubeEffect: {
-    shadow: true,
-    slideShadows: true,
-    shadowOffset: 20,
-    shadowScale: 0.04,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
   },
-
+  autoplay: 2000,
   pagination: '.swiper-pagination'
 });
 
