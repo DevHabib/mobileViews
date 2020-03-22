@@ -216,7 +216,7 @@ header {
 
   &-offer {
     border-radius: 10px;
-    background-image: url('assets/img/bg/banner-2.jpg');
+    background-image: url('/assets/img/bg/banner-2.jpg');
     background-attachment: scroll;
     background-position: center;
     background-size: cover;
@@ -237,7 +237,7 @@ header {
       z-index: -1;
       background-color: #000;
       border-radius: 10px;
-      opacity: 0.8;
+      opacity: 0.7;
     }
 
     &-img {

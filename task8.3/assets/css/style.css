@@ -212,7 +212,7 @@ header .navbar .form-group .custom-control label {
 
 .banner-offer {
   border-radius: 10px;
-  background-image: url("assets/img/bg/banner-2.jpg");
+  background-image: url("/assets/img/bg/banner-2.jpg");
   background-attachment: scroll;
   background-position: center;
   background-size: cover;
@@ -234,7 +234,7 @@ header .navbar .form-group .custom-control label {
   z-index: -1;
   background-color: #000;
   border-radius: 10px;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .banner-offer-img {
