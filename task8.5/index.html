@@ -5,44 +5,98 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mobile Design</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/material-icons.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 </head>
 
 <body>
+
   <header>
-    <nav class="navbar justify-content-between align-items-center">
-      <div class="pre-location">
-        <p><i class="fas fa-map-marker-alt"></i> <span>Sylhet, Bangladesh</span></p>
-      </div>
-      <a href="javascript:void(0)" class="navbar-toggler" data-toggle="collapse"
-        data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span>Home Delivery <i class="fas fa-chevron-down"></i></span>
-      </a>
-    </nav>
-    <div class="collapse" id="navbarToggleExternalContent">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <ul class="list-unstyled">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col s2">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="sidenav" id="mobile-demo">
+                  <li><a href="sass.html">Sass</a></li>
+                  <li><a href="badges.html">Components</a></li>
+                  <li><a href="collapsible.html">Javascript</a></li>
+                  <li><a href="mobile.html">Mobile</a></li>
+                </ul>
+              </div>
+              <div class="col s8">
+                <div class="input-field">
+                  <input type="text" id="autocomplete-input" class="autocomplete">
+                  <label for="autocomplete-input">Autocomplete</label>
+                </div>
+              </div>
+              <div class="col s2">
+                <a href="#!">
+                  <i class="material-icons">shopping_cart</i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </nav>
     </div>
   </header>
 
+  <section class="menu">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <ul class="tabs">
+            <li class="tab col s3"><a class="active" href="#veg-pizza">veg pizza</a></li>
+            <li class="tab col s3"><a href="#non-veg">Non-veg pizza</a></li>
+            <li class="tab col s3"><a href="#special">Special items</a></li>
+            <li class="tab col s3"><a href="#ice-cream">Ice-cream</a></li>
+            <li class="tab col s3"><a href="#coffee">Coffee</a></li>
+          </ul>
+        </div>
+        <div id="veg-pizza" class="col s12">
+          <ul class="collapsible">
+            <li>
+              <div class="menu-card">
+                <div class="menu-card-img">
+                  <img src="assets/img/menu/1.png" alt="">
+                </div>
+                <div class="menu-card-content">
+                  <div class="menu-card-title">
+                    <h4 class="name">Deluxe Veggie</h4>
+                    <h5 class="price">&#2547; 250</h5>
+                  </div>
+                  <a href="#!" class="collapsible-header">
+                    <i class="material-icons">expand_more</i>
+                  </a>
+                </div>
+              </div>
+              <div class="collapsible-body">
+                <a class="waves-effect waves-light btn">button</a>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+          </ul>
+        </div>
+        <div id="non-veg" class="col s12">Test 2</div>
+        <div id="special" class="col s12">Test 3</div>
+        <div id="ice-crean" class="col s12">Test 4</div>
+        <div id="coffee" class="col s12">Test 4</div>
+      </div>
+    </div>
+  </section>
   <script src="assets/js/jquery.min.js" type="text/javascript"></script>
-  <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-  <script src="assets/js/popper.min.js" type="text/javascript"></script>
-  <script src="assets/js/swiper.min.js" type="text/javascript"></script>
+  <script src="assets/js/materialize.min.js" type="text/javascript"></script>
   <script src="assets/js/main.js" type="text/javascript"></script>
 </body>
 

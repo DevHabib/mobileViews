@@ -25,6 +25,39 @@ body {
   src: url("../fonts/Poppins/Poppins-Light.ttf");
 }
 
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../iconfont/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(../iconfont/MaterialIcons-Regular.woff2) format("woff2"), url(../iconfont/MaterialIcons-Regular.woff) format("woff"), url(../iconfont/MaterialIcons-Regular.ttf) format("truetype");
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+}
+
 body {
   font-family: 'Poppins', 'sans-serif';
   position: relative;
@@ -38,28 +71,29 @@ p {
   margin-bottom: 0;
 }
 
-header {
-  border-bottom: 2px solid #ddd;
-  padding: 10px 0;
+header nav {
+  background-color: transparent;
 }
 
-header nav p {
-  font-size: 16px;
-  color: #333;
+header nav a i {
+  color: #D3000E;
 }
 
-header nav .navbar-toggler {
-  font-size: 16px;
-  color: #333;
+.menu .collapsible .menu-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-header nav .navbar-toggler i {
-  font-size: 14px;
+.menu .collapsible .menu-card-img {
+  width: 40%;
+}
+
+.menu .collapsible .menu-card-img img {
+  width: 100%;
+}
+
+.menu .collapsible .menu-card-content {
+  width: 60%;
 }
 /*# sourceMappingURL=style.css.map */
