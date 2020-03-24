@@ -19,23 +19,29 @@
           <div class="container">
             <div class="row">
               <div class="col s2">
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="sidenav" id="mobile-demo">
-                  <li><a href="sass.html">Sass</a></li>
-                  <li><a href="badges.html">Components</a></li>
-                  <li><a href="collapsible.html">Javascript</a></li>
-                  <li><a href="mobile.html">Mobile</a></li>
+                <ul id="slide-out" class="sidenav">
+                  <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+                  <li><a href="#!">Second Link</a></li>
+                  <li>
+                    <div class="divider"></div>
+                  </li>
+                  <li><a class="subheader">Subheader</a></li>
+                  <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
                 </ul>
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
               </div>
               <div class="col s8">
                 <div class="input-field">
                   <input type="text" id="autocomplete-input" class="autocomplete">
-                  <label for="autocomplete-input">Autocomplete</label>
+                  <label for="autocomplete-input">Search your favorite</label>
                 </div>
               </div>
               <div class="col s2">
                 <a href="#!">
-                  <i class="material-icons">shopping_cart</i>
+                  <div class="cart">
+                    <i class="material-icons">shopping_cart</i>
+                    <p>0</p>
+                  </div>
                 </a>
               </div>
             </div>
@@ -50,11 +56,11 @@
       <div class="row">
         <div class="col s12">
           <ul class="tabs">
-            <li class="tab col s3"><a class="active" href="#veg-pizza">veg pizza</a></li>
-            <li class="tab col s3"><a href="#non-veg">Non-veg pizza</a></li>
-            <li class="tab col s3"><a href="#special">Special items</a></li>
-            <li class="tab col s3"><a href="#ice-cream">Ice-cream</a></li>
-            <li class="tab col s3"><a href="#coffee">Coffee</a></li>
+            <li class="tab col s5"><a class="active" href="#veg-pizza">veg pizza</a></li>
+            <li class="tab col s5"><a href="#non-veg">Non-veg pizza</a></li>
+            <li class="tab col s5"><a href="#special">Special items</a></li>
+            <li class="tab col s5"><a href="#ice-cream">Ice-cream</a></li>
+            <li class="tab col s5"><a href="#coffee">Coffee</a></li>
           </ul>
         </div>
         <div id="veg-pizza" class="col s12">
@@ -65,9 +71,14 @@
                   <img src="assets/img/menu/1.png" alt="">
                 </div>
                 <div class="menu-card-content">
-                  <div class="menu-card-title">
-                    <h4 class="name">Deluxe Veggie</h4>
-                    <h5 class="price">&#2547; 250</h5>
+                  <div class="menu-card-top">
+                    <div class="menu-card-top-title">
+                      <h4 class="name">Deluxe Veggie</h4>
+                      <h5 class="price">&#2547; 250</h5>
+                    </div>
+                    <div class="menu-card-top-des">
+                      <p>Onion | capsicum | grilled mushroom | golden corn & paneer</p>
+                    </div>
                   </div>
                   <a href="#!" class="collapsible-header">
                     <i class="material-icons">expand_more</i>
@@ -75,23 +86,423 @@
                 </div>
               </div>
               <div class="collapsible-body">
-                <a class="waves-effect waves-light btn">button</a>
+                <div class="collapsible-body-items">
+                  <a class="waves-effect waves-light btn">Call Us</a>
+                  <a class="waves-effect waves-light pulse btn"><span>Order now</span> <i
+                      class="material-icons">add_circle_outline</i> </a>
+                </div>
               </div>
             </li>
             <li>
-              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+              <div class="menu-card">
+                <div class="menu-card-img">
+                  <img src="assets/img/menu/2.png" alt="">
+                </div>
+                <div class="menu-card-content">
+                  <div class="menu-card-top">
+                    <div class="menu-card-top-title">
+                      <h4 class="name">Deluxe Veggie</h4>
+                      <h5 class="price">&#2547; 250</h5>
+                    </div>
+                    <div class="menu-card-top-des">
+                      <p>Onion | capsicum | grilled mushroom | golden corn & paneer</p>
+                    </div>
+                  </div>
+                  <a href="#!" class="collapsible-header">
+                    <i class="material-icons">expand_more</i>
+                  </a>
+                </div>
+              </div>
+              <div class="collapsible-body">
+                <div class="collapsible-body-items">
+                  <a class="waves-effect waves-light btn">Call Us</a>
+                  <a class="waves-effect waves-light pulse btn"><span>Order now</span> <i
+                      class="material-icons">add_circle_outline</i> </a>
+                </div>
+              </div>
             </li>
             <li>
-              <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+              <div class="menu-card">
+                <div class="menu-card-img">
+                  <img src="assets/img/menu/3.png" alt="">
+                </div>
+                <div class="menu-card-content">
+                  <div class="menu-card-top">
+                    <div class="menu-card-top-title">
+                      <h4 class="name">Deluxe Veggie</h4>
+                      <h5 class="price">&#2547; 250</h5>
+                    </div>
+                    <div class="menu-card-top-des">
+                      <p>Onion | capsicum | grilled mushroom | golden corn & paneer</p>
+                    </div>
+                  </div>
+                  <a href="#!" class="collapsible-header">
+                    <i class="material-icons">expand_more</i>
+                  </a>
+                </div>
+              </div>
+              <div class="collapsible-body">
+                <div class="collapsible-body-items">
+                  <a class="waves-effect waves-light btn">Call Us</a>
+                  <a class="waves-effect waves-light pulse btn"><span>Order now</span> <i
+                      class="material-icons">add_circle_outline</i> </a>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
-        <div id="non-veg" class="col s12">Test 2</div>
-        <div id="special" class="col s12">Test 3</div>
-        <div id="ice-crean" class="col s12">Test 4</div>
-        <div id="coffee" class="col s12">Test 4</div>
+        <div id="non-veg" class="col s12">
+          <ul class="collapsible">
+            <li>
+              <div class="menu-card">
+                <div class="menu-card-img">
+                  <img src="assets/img/menu/3.png" alt="">
+                </div>
+                <div class="menu-card-content">
+                  <div class="menu-card-top">
+                    <div class="menu-card-top-title">
+                      <h4 class="name">Deluxe Veggie</h4>
+                      <h5 class="price">&#2547; 250</h5>
+                    </div>
+                    <div class="menu-card-top-des">
+                      <p>Onion | capsicum | grilled mushroom | golden corn & paneer</p>
+                    </div>
+                  </div>
+                  <a href="#!" class="collapsible-header">
+                    <i class="material-icons">expand_more</i>
+                  </a>
+                </div>
+              </div>
+              <div class="collapsible-body">
+                <div class="collapsible-body-items">
+                  <a class="waves-effect waves-light btn">Call Us</a>
+                  <a class="waves-effect waves-light pulse btn"><span>Order now</span> <i
+                      class="material-icons">add_circle_outline</i> </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card">
+                <div class="menu-card-img">
+                  <img src="assets/img/menu/1.png" alt="">
+                </div>
+                <div class="menu-card-content">
+                  <div class="menu-card-top">
+                    <div class="menu-card-top-title">
+                      <h4 class="name">Deluxe Veggie</h4>
+                      <h5 class="price">&#2547; 250</h5>
+                    </div>
+                    <div class="menu-card-top-des">
+                      <p>Onion | capsicum | grilled mushroom | golden corn & paneer</p>
+                    </div>
+                  </div>
+                  <a href="#!" class="collapsible-header">
+                    <i class="material-icons">expand_more</i>
+                  </a>
+                </div>
+              </div>
+              <div class="collapsible-body">
+                <div class="collapsible-body-items">
+                  <a class="waves-effect waves-light btn">Call Us</a>
+                  <a class="waves-effect waves-light pulse btn"><span>Order now</span> <i
+                      class="material-icons">add_circle_outline</i> </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card">
+                <div class="menu-card-img">
+                  <img src="assets/img/menu/2.png" alt="">
+                </div>
+                <div class="menu-card-content">
+                  <div class="menu-card-top">
+                    <div class="menu-card-top-title">
+                      <h4 class="name">Deluxe Veggie</h4>
+                      <h5 class="price">&#2547; 250</h5>
+                    </div>
+                    <div class="menu-card-top-des">
+                      <p>Onion | capsicum | grilled mushroom | golden corn & paneer</p>
+                    </div>
+                  </div>
+                  <a href="#!" class="collapsible-header">
+                    <i class="material-icons">expand_more</i>
+                  </a>
+                </div>
+              </div>
+              <div class="collapsible-body">
+                <div class="collapsible-body-items">
+                  <a class="waves-effect waves-light btn">Call Us</a>
+                  <a class="waves-effect waves-light pulse btn"><span>Order now</span> <i
+                      class="material-icons">add_circle_outline</i> </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="special" class="col s12">
+          <ul class="collapsible">
+            <li>
+              <div class="menu-card">
+                <div class="menu-card-img">
+                  <img src="assets/img/menu/3.png" alt="">
+                </div>
+                <div class="menu-card-content">
+                  <div class="menu-card-top">
+                    <div class="menu-card-top-title">
+                      <h4 class="name">Deluxe Veggie</h4>
+                      <h5 class="price">&#2547; 250</h5>
+                    </div>
+                    <div class="menu-card-top-des">
+                      <p>Onion | capsicum | grilled mushroom | golden corn & paneer</p>
+                    </div>
+                  </div>
+                  <a href="#!" class="collapsible-header">
+                    <i class="material-icons">expand_more</i>
+                  </a>
+                </div>
+              </div>
+              <div class="collapsible-body">
+                <div class="collapsible-body-items">
+                  <a class="waves-effect waves-light btn">Call Us</a>
+                  <a class="waves-effect waves-light pulse btn"><span>Order now</span> <i
+                      class="material-icons">add_circle_outline</i> </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card">
+                <div class="menu-card-img">
+                  <img src="assets/img/menu/2.png" alt="">
+                </div>
+                <div class="menu-card-content">
+                  <div class="menu-card-top">
+                    <div class="menu-card-top-title">
+                      <h4 class="name">Deluxe Veggie</h4>
+                      <h5 class="price">&#2547; 250</h5>
+                    </div>
+                    <div class="menu-card-top-des">
+                      <p>Onion | capsicum | grilled mushroom | golden corn & paneer</p>
+                    </div>
+                  </div>
+                  <a href="#!" class="collapsible-header">
+                    <i class="material-icons">expand_more</i>
+                  </a>
+                </div>
+              </div>
+              <div class="collapsible-body">
+                <div class="collapsible-body-items">
+                  <a class="waves-effect waves-light btn">Call Us</a>
+                  <a class="waves-effect waves-light pulse btn"><span>Order now</span> <i
+                      class="material-icons">add_circle_outline</i> </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card">
+                <div class="menu-card-img">
+                  <img src="assets/img/menu/1.png" alt="">
+                </div>
+                <div class="menu-card-content">
+                  <div class="menu-card-top">
+                    <div class="menu-card-top-title">
+                      <h4 class="name">Deluxe Veggie</h4>
+                      <h5 class="price">&#2547; 250</h5>
+                    </div>
+                    <div class="menu-card-top-des">
+                      <p>Onion | capsicum | grilled mushroom | golden corn & paneer</p>
+                    </div>
+                  </div>
+                  <a href="#!" class="collapsible-header">
+                    <i class="material-icons">expand_more</i>
+                  </a>
+                </div>
+              </div>
+              <div class="collapsible-body">
+                <div class="collapsible-body-items">
+                  <a class="waves-effect waves-light btn">Call Us</a>
+                  <a class="waves-effect waves-light pulse btn"><span>Order now</span> <i
+                      class="material-icons">add_circle_outline</i> </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="ice-cream" class="col s12">
+          <ul class="collapsible">
+            <li>
+              <div class="menu-card">
+                <div class="menu-card-img">
+                  <img src="assets/img/menu/i1.png" alt="">
+                </div>
+                <div class="menu-card-content">
+                  <div class="menu-card-top">
+                    <div class="menu-card-top-title">
+                      <h4 class="name">Ice-Cream</h4>
+                      <h5 class="price">&#2547; 250</h5>
+                    </div>
+                    <div class="menu-card-top-des">
+                      <p>Onion | capsicum | grilled mushroom | golden corn & paneer</p>
+                    </div>
+                  </div>
+                  <a href="#!" class="collapsible-header">
+                    <i class="material-icons">expand_more</i>
+                  </a>
+                </div>
+              </div>
+              <div class="collapsible-body">
+                <div class="collapsible-body-items">
+                  <a class="waves-effect waves-light btn">Call Us</a>
+                  <a class="waves-effect waves-light pulse btn"><span>Order now</span> <i
+                      class="material-icons">add_circle_outline</i> </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card">
+                <div class="menu-card-img">
+                  <img src="assets/img/menu/i2.png" alt="">
+                </div>
+                <div class="menu-card-content">
+                  <div class="menu-card-top">
+                    <div class="menu-card-top-title">
+                      <h4 class="name">Deluxe Veggie</h4>
+                      <h5 class="price">&#2547; 250</h5>
+                    </div>
+                    <div class="menu-card-top-des">
+                      <p>Onion | capsicum | grilled mushroom | golden corn & paneer</p>
+                    </div>
+                  </div>
+                  <a href="#!" class="collapsible-header">
+                    <i class="material-icons">expand_more</i>
+                  </a>
+                </div>
+              </div>
+              <div class="collapsible-body">
+                <div class="collapsible-body-items">
+                  <a class="waves-effect waves-light btn">Call Us</a>
+                  <a class="waves-effect waves-light pulse btn"><span>Order now</span> <i
+                      class="material-icons">add_circle_outline</i> </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card">
+                <div class="menu-card-img">
+                  <img src="assets/img/menu/i3.png" alt="">
+                </div>
+                <div class="menu-card-content">
+                  <div class="menu-card-top">
+                    <div class="menu-card-top-title">
+                      <h4 class="name">Deluxe Veggie</h4>
+                      <h5 class="price">&#2547; 250</h5>
+                    </div>
+                    <div class="menu-card-top-des">
+                      <p>Onion | capsicum | grilled mushroom | golden corn & paneer</p>
+                    </div>
+                  </div>
+                  <a href="#!" class="collapsible-header">
+                    <i class="material-icons">expand_more</i>
+                  </a>
+                </div>
+              </div>
+              <div class="collapsible-body">
+                <div class="collapsible-body-items">
+                  <a class="waves-effect waves-light btn">Call Us</a>
+                  <a class="waves-effect waves-light pulse btn"><span>Order now</span> <i
+                      class="material-icons">add_circle_outline</i> </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="coffee" class="col s12">
+          <ul class="collapsible">
+            <li>
+              <div class="menu-card">
+                <div class="menu-card-img">
+                  <img src="assets/img/menu/c1.png" alt="">
+                </div>
+                <div class="menu-card-content">
+                  <div class="menu-card-top">
+                    <div class="menu-card-top-title">
+                      <h4 class="name">Black Coffee</h4>
+                      <h5 class="price">&#2547; 100</h5>
+                    </div>
+                    <div class="menu-card-top-des">
+                      <p>Coffee | No suger</p>
+                    </div>
+                  </div>
+                  <a href="#!" class="collapsible-header">
+                    <i class="material-icons">expand_more</i>
+                  </a>
+                </div>
+              </div>
+              <div class="collapsible-body">
+                <div class="collapsible-body-items">
+                  <a class="waves-effect waves-light btn">Call Us</a>
+                  <a class="waves-effect waves-light pulse btn"><span>Order now</span> <i
+                      class="material-icons">add_circle_outline</i> </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card">
+                <div class="menu-card-img">
+                  <img src="assets/img/menu/c2.png" alt="">
+                </div>
+                <div class="menu-card-content">
+                  <div class="menu-card-top">
+                    <div class="menu-card-top-title">
+                      <h4 class="name">Custom Coffee</h4>
+                      <h5 class="price">&#2547; 250</h5>
+                    </div>
+                    <div class="menu-card-top-des">
+                      <p>Coffee | Milk | sugar | cream</p>
+                    </div>
+                  </div>
+                  <a href="#!" class="collapsible-header">
+                    <i class="material-icons">expand_more</i>
+                  </a>
+                </div>
+              </div>
+              <div class="collapsible-body">
+                <div class="collapsible-body-items">
+                  <a class="waves-effect waves-light btn">Call Us</a>
+                  <a class="waves-effect waves-light pulse btn"><span>Order now</span> <i
+                      class="material-icons">add_circle_outline</i> </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card">
+                <div class="menu-card-img">
+                  <img src="assets/img/menu/c3.png" alt="">
+                </div>
+                <div class="menu-card-content">
+                  <div class="menu-card-top">
+                    <div class="menu-card-top-title">
+                      <h4 class="name">Turkish Coffee</h4>
+                      <h5 class="price">&#2547; 250</h5>
+                    </div>
+                    <div class="menu-card-top-des">
+                      <p>Onion | capsicum | grilled mushroom | golden corn & paneer</p>
+                    </div>
+                  </div>
+                  <a href="#!" class="collapsible-header">
+                    <i class="material-icons">expand_more</i>
+                  </a>
+                </div>
+              </div>
+              <div class="collapsible-body">
+                <div class="collapsible-body-items">
+                  <a class="waves-effect waves-light btn">Call Us</a>
+                  <a class="waves-effect waves-light pulse btn"><span>Order now</span> <i
+                      class="material-icons">add_circle_outline</i> </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
