@@ -89,8 +89,14 @@ i {
   margin: 0;
 }
 
+.modal .modal-content h1 {
+  margin-bottom: 0;
+  color: #333;
+  font-size: 20px;
+}
+
 header nav {
-  background-color: transparent;
+  background-color: #fff;
   height: 60px;
   line-height: 60px;
 }
@@ -180,6 +186,7 @@ header nav .input-field input[type=text]:valid {
 .menu .collapsible .menu-card-img img {
   width: 100%;
   border-radius: 50%;
+  display: block;
 }
 
 .menu .collapsible .menu-card-content {
@@ -277,5 +284,13 @@ header nav .input-field input[type=text]:valid {
 
 .menu .collapsible .collapsible-body a i {
   padding-left: 5px;
+}
+
+.page-footer {
+  background-color: #005178;
+}
+
+.page-footer .footer-copyright {
+  background-color: rgba(51, 51, 51, 0.5);
 }
 /*# sourceMappingURL=style.css.map */

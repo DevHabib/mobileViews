@@ -93,13 +93,22 @@ i {
   margin: 0;
 }
 
+.modal {
+  .modal-content {
+    h1 {
+      margin-bottom: 0;
+      color: #333;
+      font-size: 20px;
+    }
+  }
+}
+
 header {
   nav {
-    background-color: transparent;
+    background-color: #fff;
     height: 60px;
     line-height: 60px;
 
-    .sidnav-trigger {}
 
     a {
       margin: 0 !important;
@@ -178,6 +187,7 @@ header {
         img {
           width: 100%;
           border-radius: 50%;
+          display: block;
         }
       }
 
@@ -256,5 +266,13 @@ header {
         }
       }
     }
+  }
+}
+
+.page-footer {
+  background-color: #005178;
+
+  .footer-copyright {
+    background-color: rgba(51, 51, 51, 0.5);
   }
 }
