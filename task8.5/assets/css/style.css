@@ -63,6 +63,20 @@ body {
   position: relative;
 }
 
+input[type=text]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid #DD0015;
+  -webkit-box-shadow: 0 1px 0 0 #dd0015;
+          box-shadow: 0 1px 0 0 #dd0015;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) + label {
+  color: #dd0015;
+}
+
+.sidenav-overlay {
+  background-color: transparent;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -71,29 +85,212 @@ p {
   margin-bottom: 0;
 }
 
+i {
+  margin: 0;
+}
+
+.modal .modal-content h1 {
+  margin-bottom: 0;
+  color: #333;
+  font-size: 20px;
+}
+
 header nav {
-  background-color: transparent;
+  background-color: #fff;
+  height: 60px;
+  line-height: 60px;
+}
+
+header nav a {
+  margin: 0 !important;
+  height: auto !important;
 }
 
 header nav a i {
   color: #D3000E;
 }
 
+header nav a .cart {
+  position: relative;
+  width: 35px;
+}
+
+header nav a .cart p {
+  position: absolute;
+  background-color: #005178;
+  top: 0;
+  right: 0;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+  width: 20px;
+  text-align: center;
+}
+
+header nav .input-field input[type=text]:valid {
+  border-bottom: 1px solid #dd0015;
+}
+
+.menu {
+  margin-top: 20px;
+}
+
+.menu .tabs {
+  background-color: #005178;
+}
+
+.menu .tabs .indicator {
+  background-color: #FF7300;
+  height: 4px;
+}
+
+.menu .tabs .tab {
+  border-right: 1px solid #bac5cc;
+}
+
+.menu .tabs .tab a {
+  color: #BAC5CC;
+}
+
+.menu .tabs .tab .active {
+  background-color: transparent;
+  color: #fff;
+}
+
+.menu .collapsible {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
 .menu .collapsible .menu-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 5px #ccc;
+          box-shadow: 2px 2px 5px #ccc;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu .collapsible .menu-card-img {
-  width: 40%;
+  width: 35%;
 }
 
 .menu .collapsible .menu-card-img img {
   width: 100%;
+  border-radius: 50%;
+  display: block;
 }
 
 .menu .collapsible .menu-card-content {
-  width: 60%;
+  width: 65%;
+  padding: 15px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu .collapsible .menu-card-content .collapsible-header {
+  padding: 0;
+  border-bottom: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: #DD0015;
+}
+
+.menu .collapsible .menu-card-content .collapsible-header i {
+  margin-right: 0;
+}
+
+.menu .collapsible .menu-card-content .menu-card-top-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.menu .collapsible .menu-card-content .menu-card-top-title .name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #686868;
+  margin: 0;
+}
+
+.menu .collapsible .menu-card-content .menu-card-top-title .price {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 600;
+  color: #DD0015;
+}
+
+.menu .collapsible .menu-card-content .menu-card-top-des p {
+  text-transform: capitalize;
+  color: #B5B5B7;
+  font-size: 13px;
+}
+
+.menu .collapsible .collapsible-body {
+  -webkit-box-shadow: 0 0 10px 2px #ccc;
+          box-shadow: 0 0 10px 2px #ccc;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  border-radius: 5px;
+}
+
+.menu .collapsible .collapsible-body-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu .collapsible .collapsible-body a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  padding: 13px;
+  background-color: #dd0015;
+}
+
+.menu .collapsible .collapsible-body a i {
+  padding-left: 5px;
+}
+
+.page-footer {
+  background-color: #005178;
+}
+
+.page-footer .footer-copyright {
+  background-color: rgba(51, 51, 51, 0.5);
 }
 /*# sourceMappingURL=style.css.map */
