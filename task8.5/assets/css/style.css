@@ -34,6 +34,10 @@ body {
   src: local("Material Icons"), local("MaterialIcons-Regular"), url(../iconfont/MaterialIcons-Regular.woff2) format("woff2"), url(../iconfont/MaterialIcons-Regular.woff) format("woff"), url(../iconfont/MaterialIcons-Regular.ttf) format("truetype");
 }
 
+.container {
+  width: 100%;
+}
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;

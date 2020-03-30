@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../iconfont/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(../iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+    url(../iconfont/MaterialIcons-Regular.woff) format('woff'),
+    url(../iconfont/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.container {
+  width: 100%;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+body {
+  font-family: 'Poppins', 'sans-serif';
+  position: relative;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+  background-color: transparent;
+  outline: none;
+}
+
+.tabs .tab a:hover,
+.tabs .tab a.active {
+  background-color: transparent;
+  color: #000;
+  font-weight: 600;
+}
+
+.tabs {
+  .tab {
+    a {
+      color: #949494;
+    }
+  }
+}
+
+.tabs {
+  .indicator {
+    display: none;
+  }
+}
+
+p {
+  margin-bottom: 0;
+}
+
+i {
+  margin: 0;
+}
+
+header {
+  background-image: url("../img/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+
+  i {
+    margin-top: 20px;
+    color: #fff;
+  }
+}
+
+section {
+  .menu {
+    &-items {
+      display: flex;
+
+      &-single {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #f4f4f4;
+
+        .single-left {
+          padding-right: 10px;
+          width: 70%;
+
+          .item-header {
+            h4 {
+              font-size: 16px;
+              font-weight: 600;
+            }
+          }
+
+          .item-des {
+            p {
+              color: #949494;
+              font-size: 11px;
+              margin-bottom: .912rem;
+            }
+          }
+
+          .item-price {
+            p {
+              font-weight: 600;
+              font-size: 15px;
+              color: #F14235
+            }
+          }
+        }
+
+        .single-right {
+          width: 30%;
+
+          img {
+            margin: 10px 0;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-footer {
+  background-color: #005178;
+
+  .footer-copyright {
+    background-color: rgba(51, 51, 51, 0.5);
+  }
+}
