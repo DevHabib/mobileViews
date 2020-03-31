@@ -196,28 +196,18 @@ header nav .input-field input[type=text]:valid {
   -webkit-box-shadow: 2px 2px 5px #ccc;
           box-shadow: 2px 2px 5px #ccc;
   margin-bottom: 10px;
+  position: relative;
 }
 
 .menu .collapsible li .see-more {
-  width: 100%;
-}
-
-.menu .collapsible li .see-more i {
-  -webkit-transition: .3s;
-  transition: .3s;
-  width: 100%;
-  text-align: right;
-}
-
-.menu .collapsible .active .see-more {
-  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .menu .collapsible .active .see-more i {
   -webkit-transition: .3s;
   transition: .3s;
-  width: 100%;
-  text-align: left;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -329,7 +319,7 @@ header nav .input-field input[type=text]:valid {
   -webkit-box-shadow: none;
           box-shadow: none;
   border-bottom: none;
-  padding: 5px;
+  padding: 20px 5px;
 }
 
 .menu .collapsible .collapsible-body-top {
@@ -354,6 +344,7 @@ header nav .input-field input[type=text]:valid {
 }
 
 .menu .collapsible .collapsible-body-top .items-left-content .items-header {
+  color: #005178;
   text-transform: capitalize;
   font-size: 13px;
   font-weight: 600;
@@ -370,9 +361,11 @@ header nav .input-field input[type=text]:valid {
 }
 
 .menu .collapsible .collapsible-body-top .items-right-content h5 {
+  color: #005178;
   text-transform: uppercase;
   font-size: 13px;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .menu .collapsible .collapsible-body-top .items-right-content [type="checkbox"] + span:not(.lever) {
@@ -381,6 +374,8 @@ header nav .input-field input[type=text]:valid {
 }
 
 .menu .collapsible .collapsible-body-top .items-right-content label span .items-check-content p {
+  font-weight: 600;
+  text-transform: capitalize;
   margin-top: -7px;
 }
 
@@ -422,6 +417,7 @@ header nav .input-field input[type=text]:valid {
 
 .menu .collapsible .collapsible-body-bottom .bottom-items-left .bottom-left-top label span .extra-add {
   margin-left: 5px;
+  font-weight: 600;
 }
 
 .menu .collapsible .collapsible-body-bottom .bottom-items-left .bottom-left-top [type="checkbox"] + span:not(.lever) {

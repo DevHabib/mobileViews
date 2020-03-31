@@ -203,26 +203,20 @@ header {
       border-radius: 5px;
       box-shadow: 2px 2px 5px #ccc;
       margin-bottom: 10px;
+      position: relative;
 
       .see-more {
-        width: 100%;
-
-        i {
-          transition: .3s;
-          width: 100%;
-          text-align: right;
-        }
+        position: absolute;
+        right: 0;
+        bottom: 0;
       }
+
     }
 
     .active {
       .see-more {
-        width: 100%;
-
         i {
           transition: .3s;
-          width: 100%;
-          text-align: left;
           transform: rotate(180deg);
         }
       }
@@ -342,7 +336,7 @@ header {
     .collapsible-body {
       box-shadow: none;
       border-bottom: none;
-      padding: 5px;
+      padding: 20px 5px;
 
       &-top {
         display: flex;
@@ -359,6 +353,7 @@ header {
             background-color: #e5e5e5;
 
             .items-header {
+              color: #005178;
               text-transform: capitalize;
               font-size: 13px;
               font-weight: 600;
@@ -377,9 +372,11 @@ header {
 
           &-content {
             h5 {
+              color: #005178;
               text-transform: uppercase;
               font-size: 13px;
               margin: 0;
+              margin-bottom: 10px;
             }
 
             [type="checkbox"]+span:not(.lever) {
@@ -391,6 +388,8 @@ header {
               span {
                 .items-check-content {
                   p {
+                    font-weight: 600;
+                    text-transform: capitalize;
                     margin-top: -7px;
                   }
                 }
@@ -426,6 +425,7 @@ header {
 
                 .extra-add {
                   margin-left: 5px;
+                  font-weight: 600;
                 }
               }
             }
